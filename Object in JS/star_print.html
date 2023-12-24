@@ -1,0 +1,23 @@
+<html>
+ENTER NUMBER:
+<input type="text" id="t1"><br>
+<input type="button" value="okk" onclick="print()">
+</html>
+
+<script>
+function print(){
+ var n=document.getElementById("t1").value;
+n=parseInt(n);
+ var i;
+ var j;
+ for (i=0;i<=n;i++){
+ for (j=0;j<=i;j++){
+ document.write("*");
+ }
+ document.write("<br>");
+ }
+
+}
+</script>
+
+
