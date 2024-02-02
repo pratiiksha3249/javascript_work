@@ -1,0 +1,11 @@
+let a=22;
+let b="22";
+// console.log("addition of numbers...",a+b);
+// console.log("div of numbers...",a/b);
+// console.log("mul of numbers...",a*b);
+// a+=5;
+// console.log(a);
+console.log("a and b=",a==b);
+console.log("a and b=",a===b);
+console.log("a and b=",a!=b);
+console.log("a and b=",a!==b);
