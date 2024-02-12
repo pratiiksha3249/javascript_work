@@ -1,7 +1,7 @@
 // const obj = { name: "rajesh", age: 13, gender: false };
 // console.log(obj.name);
 
-let tiksha={name:"priya",age:19,gender:"female"}
+let tiksha={name:"priya",age:19,gender:"female"};
  let name1={boy:"abhay",girl:"tiksha"};
  let coding_lag=["c","php","js","java"];
 

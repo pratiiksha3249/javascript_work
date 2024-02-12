@@ -1,6 +1,6 @@
 let a={
-    "name":"tiksah",
-    "per":89,
+    name:"tiksah",
+    per:89,
     friend:"vaishu",
     day:87,
     
