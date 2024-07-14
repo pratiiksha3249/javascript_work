@@ -1,0 +1,15 @@
+#completed
+
+1.variable
+2.array
+3.map 
+4.filter
+5.loop
+    1.for 
+    2.while
+    3.foreach
+    4.for in
+    5.for of
+6.object
+1.key-value
+2.rec update
