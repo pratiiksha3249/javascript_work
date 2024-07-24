@@ -1,12 +1,13 @@
 let myDate=new Date();
-console.log(myDate);
+// console.log(myDate);
 
 //we can convert time and date with
-console.log(myDate.toDateString());
-console.log(myDate.getDay());
+
+//console.log(myDate.toDateString());
+// console.log(myDate.getDay());
 
 //Date its type is object
-console.log(typeof myDate);
+// console.log(typeof myDate);
 
 //year month day
 let newdate=new Date(2024,4,12);

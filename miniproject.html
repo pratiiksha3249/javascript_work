@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <h1 align="center">color switcher for background.....!</h1>
+        <style>
+            body{
+
+                background-color: black;
+                color: aliceblue;
+            }
+            .bt{
+                padding: 50px;
+                border-radius: 4px;
+                margin-left: 250px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+ <div>
+<button class="bt" id="pink">Click me</button>
+<button class="bt" id="green">Click me</button>
+<button class="bt" id="blue">Click me</button>
+
+ </div>
+    </body>
+    <script>
+      const buttons= document.querySelectorAll('.bt');
+      const body = document.querySelector('body');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click',function(e){
+            console.log(e.target);
+              if(e.target.id==='pink'){
+                body.style.backgroundColor="pink";
+              }
+              if(e.target.id==='green'){
+                body.style.backgroundColor="green";
+              }
+              if(e.target.id==='blue'){
+                body.style.backgroundColor="blue";
+              }
+        })
+
+      });
+
+
+    </script>
+</html>
+
+<!-- ERROR CODE ------------------------------------------------------------ -->
+<!-- 
+<html>
+    <head>
+        <h1 align="center">color switcher for background.....!</h1>
+        <style>
+            body{
+
+                background-color: black;
+                color: aliceblue;
+            }
+            .bt{
+                padding: 50px;
+                border-radius: 4px;
+                margin-left: 250px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+ <div>
+<button class="bt" id="pink">Click me</button>
+<button class="bt" id="green">Click me</button>
+<button class="bt" id="blue">Click me</button>
+
+ </div>
+    </body>
+    <script>
+      const buttons= document.querySelectorAll('.bt');
+      const body = document.querySelector('body');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click',function(e){
+            console.log(e.target);
+              if(e.target.id==='pink'){
+                body.style.backgroundColor="pink";
+              }
+              if(e.target.id==='green'){
+                body.style.backgroundColor="green";
+              }
+              if(e.target.id==='blue'){
+                body.style.backgroundColor="blue";
+              }
+        })
+
+      });
+
+
+    </script>
+</html> -->

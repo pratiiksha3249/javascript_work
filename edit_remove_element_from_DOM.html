@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <h1>Good Morning Tiksha..</h1>
+    </head>
+    <body style="background-color: black; color:white;">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+
+    </body>
+<script>
+
+   function addlang(lang){
+         const li=document.createElement('li');
+         li.innerText=lang;
+         document.querySelector(".language").appendChild(li)
+   }
+   addlang('python');
+   addlang('cpp');
+//1 option
+ const seclang=document.querySelector("li:nth-child(2)")
+ console.log(seclang);
+  const newli=document.createElement("li");
+  newli.textContent="c";
+  seclang.replaceWith(newli)
+
+//2 option
+  const tlang=document.querySelector("li:nth-child(1)");
+  const nli=document.createElement("li");
+  nli.textContent="html";
+  tlang.replaceWith(nli);
+
+  //other option
+  const tlang1=document.querySelector("li:nth-child(1)");
+     tlang1.outerHTML='<li>tiksha</li>'
+
+//remove 
+
+const removeDemo=document.querySelector('li:last-child');
+removeDemo.remove();
+ </script>
+
+</html>

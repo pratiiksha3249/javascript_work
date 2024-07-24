@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <h1>Good Morning Tiksha..</h1>
+    </head>
+    <body style="background-color: black; color:white;">
+
+    <ul class="mainlang">
+        <li di="delmi">javascript</li>
+    </ul>
+
+    <div class="maindiv">
+        <div class="subdiv">i am a div</div>
+    </div>
+
+
+    </body>
+<script>
+//add  new list element
+const newli=document.querySelector(".mainlang");
+const secli=document.createElement('li')
+secli.style.color="black";
+secli.style.backgroundColor="yellow";
+secli.innerText="python";
+document.querySelector(".mainlang").appendChild(secli)
+
+//remove list element
+const removeli=document.querySelector('li:last-child');
+removeli.remove()
+
+
+
+//add new sub-div
+const li=document.querySelector(".mainlang");
+//console.log(li)
+
+const moddom=document.querySelector('.maindiv')
+console.log(moddom);
+
+const alldiv=moddom.querySelector('.subdiv');
+alldiv.textContent="ram";
+console.log(alldiv);
+
+const newdiv=document.createElement("div");
+//console.log(newdiv)
+
+newdiv.style.color="green";
+newdiv.style.padding="20px";
+newdiv.style.backgroundColor="white";
+newdiv.className="myclass";
+newdiv.id="myid";
+newdiv.innerText="tiksha"
+document.querySelector('.maindiv').appendChild(newdiv)
+
+// console.log(document.querySelectorAll(".maindiv"))
+
+
+ </script>
+
+</html>

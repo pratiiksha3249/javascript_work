@@ -6,6 +6,9 @@ let a={
     name:"priya"
 }
 
-for (let i of "priya"){
+
+for (let i in name){
     console.log(i)
 }
+
+
