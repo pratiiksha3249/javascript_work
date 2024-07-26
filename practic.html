@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <h1 align="center">color switcher for background.....!</h1>
+        <style>
+            body{
+
+                background-color: black;
+                color: aliceblue;
+            }
+            .bt{
+                padding: 50px;
+                border-radius: 4px;
+                margin-left: 250px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+ <div cl="mainimg">
+<button class="bt" id="first">Click me</button>
+<button class="bt" id="sec">Click me</button>
+<button class="bt" id="th">Click me</button>
+</div>
+<!-- 
+ </div>
+ <div class="mainimg">
+<img src="h1.jfif"  id="first" width="800px" height="800px">
+<img src="h2.jfif" id="sec" width="800px" height="800px">
+<img src="h3.jfif" id="th" width="800px" height="800px">
+ </div> -->
+
+
+    </body>
+    <script>
+        const bt= document.querySelectorAll('.bt');
+        const body = document.querySelector("body");
+
+        bt.forEach(function(img){
+                         img.addEventListener('click',function(e){
+                            //target is important
+                            if(e.target.id==='first'){
+                                body.style.backgroundImage=url("h1.jfif");
+                            }
+                            if(e.target.id==='sec'){
+                                body.style.backgroundColor ="blue";
+                            }
+                            if(e.target.id==='th'){
+                                body.style.backgroundColor ="green";
+                            }
+                         })
+
+
+        });
+
+    </script>
+    </html>
+
