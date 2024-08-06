@@ -1,0 +1,47 @@
+<html>
+<body>
+    <head>
+        <style>
+                     .div-me{
+                        padding: 20px;
+                        /* padding-right: 10px; */
+                        margin-right: 1000px;
+                        background-color: cornflowerblue;
+                     }
+                     body{
+                        background-color:green;
+                        color:aliceblue;
+                     }
+        </style>
+    </head>
+<span>hii good morning tiksha...</span>
+<div class="div-me">i am div..</div><br><br>
+<button id="myid">ok</button>
+</body>
+
+<script>
+
+let b=document.querySelector("#myid");
+b.addEventListener("click",()=>{
+console.log("hii");
+});
+
+b.addEventListener("click",()=>{
+console.log("tiksha");
+});
+
+b.addEventListener("click",()=>{
+console.log("have good day..");
+});
+
+
+//remove listener
+ let rem=b.addEventListener=()=>{
+console.log("plz remove me..");
+};
+
+b.removeEventListener("click",rem);
+
+</script>
+
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <h1 align="center">Daily Targets And Time</h1>
+        <style>
+               .main-div{
+                color:orangered;
+                font-size: large;
+                /* font-family:italic; */
+               }
+               body{
+                background-color: black;
+                color: aliceblue;
+
+               }
+               .ch{
+                padding-left: 30px;
+               }
+        </style>
+    </head>
+    <body>
+        <div class="main-div">
+            <form>
+                Add Task more
+                <input type="text" class="main-task">
+                <input type="button"  onclick="disp()" value="Add" id="main-button" style="padding: 10px;">
+
+        <ul class="myul">
+            <li>Cp solving &nbsp; 10am to 12am <input type="checkbox" class="ch"></li>
+            <div class="ch-div" style="display: flex; gap: 10px;"></div>
+
+
+        </ul>
+
+        </form>
+        </div>
+    </body>
+    <script>
+        function disp(){
+
+            const form=document.querySelector("form");
+        // console.log(form);
+        const task=document.querySelector('.main-task').value;
+     
+    console.log(task);
+    
+    const newli=document.createElement('li');
+    newli.innerHTML=task;
+
+    let checkbox = document.createElement('input');
+    checkbox.type = "checkbox";
+    
+
+
+    console.log(checkbox)
+
+    document.querySelector(".ch-div").appendChild(newli);
+       document.querySelector(".ch-div").appendChild(checkbox);
+       
+  console.log(document.querySelector(".ch-div"));
+
+
+    }
+        </script>
+
+</html>

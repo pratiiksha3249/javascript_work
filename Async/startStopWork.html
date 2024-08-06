@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="bt1" onclick="start()">start</button>
+    <button id="bt2" onclick="stop()">stop</button>
+</body>
+<script>
+    var mult;
+    function start(){
+     var setin=function(str){
+                 console.log(str,Date.now());
+             }         
+              mult=setInterval(setin,1000,"tiksha");
+            }
+            
+    function stop(){
+        clearInterval(mult); 
+            }
+            
+ 
+
+      
+
+
+</script>
+</html>

@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <h1 align="center">Just Validate and Events..</h1>
+  <style>
+    body {
+      background-color: cadetblue;
+      color: black;
+      font-size: larger;
+    }
+
+    #para {
+      margin: 200px;
+      border: 3px;
+      border-color: black;
+      background-color: chartreuse;
+      margin-top: 40px;
+      height: 500px;
+      width: 300px;
+      border-radius: 9px;
+    }
+
+    #name,
+    #no {
+      margin-left: 560px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <input type="text" id="name" placeholder="Enter Name" onkeyup="validatename()">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+    <input type="text" id="yname" placeholder="Your Name">
+    <br><br>
+    <input type="text" id="no" placeholder="Enter No">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="ans" placeholder="Ans">
+    <input type="submit" id="submit" value="submit" onclick="validate()">
+  </form>
+  <div id="para" class="mydiv">
+    <p id="pa"> .</p>
+  </div>
+</body>
+<script>
+
+  
+  const parag=document.querySelector('#pa');
+          
+
+  function validatename() {
+    const names = document.querySelector('#name').value;
+    console.log(names);
+    // const  validname = document.querySelector('#yname');
+
+const value=checkstr(names);
+    if (value) {
+ parag.innerHTML=names;
+             
+    }
+    else{
+      alert("false");
+      validname.value="";
+      // console.log(alert())
+
+    }
+  }
+  function checkstr(names) {
+    
+    return /^[A-Za-z]*$/.test(names);
+  }
+
+</script>
+
+</html>
