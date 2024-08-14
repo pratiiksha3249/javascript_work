@@ -1,0 +1,19 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        const URL="https://cat-fact.herokuapp.com/facts";
+
+                  const getdata =async function () {
+                    console.log("getting data....");
+                 let responce=await fetch(URL);
+                 console.log(responce.status);
+                 let data=responce.json();
+                 console.log(r);
+                            //   console.log(responce.json());
+                              
+                  }
+        
+    </script>
+</html>
