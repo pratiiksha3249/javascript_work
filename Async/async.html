@@ -1,0 +1,59 @@
+
+<html>
+<body>
+</body>
+<script>
+function asyncf(){
+   return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      console.log("data 1");
+      resolve("succes....");
+    },2000);
+   });
+
+
+};
+function asyncf2(){
+   return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      console.log("data 2");
+      resolve("succes....");
+    },2000);
+   });
+
+
+};
+
+
+
+// console.log("feching data.....1");
+// let retdata=asyncf();
+
+// retdata.then((res)=>{
+//    console.log(res);
+
+//    console.log("feching data.....2");
+// let retdata2=asyncf();
+
+// retdata2.then((res)=>{
+//    console.log(res);
+// })
+// })
+//------------------------------SEC way------------------------------
+
+console.log("feching data.....1");
+let retdata=asyncf();
+
+retdata.then((res)=>{
+   console.log(res);
+
+console.log("feching data.....2");
+let retdata2=asyncf();
+
+retdata2.then((res)=>{
+   console.log(res);
+})
+});
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+</body>
+<script>
+    const promisval = () => {
+
+        return new Promise(function (resolve, reject) {
+            console.log("hii");
+            // resolve("success");
+            reject("some error occurs....");
+
+        });
+
+    }
+
+    let promise = promisval();
+    //(res) is default paramitor its is optional
+    //(res) contain resolve("-") messagge
+
+    promise.then((res) => {
+        console.log("promis fullfill....",res);
+    });
+    //(err) is default paramitor its is optional
+    //(err) contain reject("-") messagge
+    promise.catch((err)=>{
+        console.log("promis is rejected....",err);
+    })
+</script>
+
+</html>

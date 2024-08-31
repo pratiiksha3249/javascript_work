@@ -39,6 +39,7 @@
 
 let error;
 const pro4 = new Promise(function (resolve, reject) {
+    
     setTimeout(function () {
         error = false;
         if (!true) {
@@ -48,6 +49,7 @@ const pro4 = new Promise(function (resolve, reject) {
             reject("ERROR : something is gonna wrong..");
         }
     }, 1000)
+
 })
 
 const uname = pro4.then((user) => {
