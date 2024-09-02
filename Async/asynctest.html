@@ -1,0 +1,35 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+
+
+
+
+     function Api(){
+return new Promise((resolve,reject)=>{
+
+setTimeout(()=>{
+    console.log("i get data...");
+    resolve(20);
+},2000)
+
+});
+}
+//calling this function its diff bcoz it return promise
+//use async
+//we have to call getdata function
+async function getdata(){
+await  Api();
+await  Api();
+await  Api();
+}
+
+
+
+
+
+
+    </script>
+</html>

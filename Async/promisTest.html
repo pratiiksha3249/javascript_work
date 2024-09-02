@@ -1,0 +1,35 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        let p_holder=function(str){
+         return new Promise(function(resolve,reject){
+             setTimeout(()=>{
+                    
+                        // reject("something error ");
+                        resolve("successful");
+                        console.log(str);
+                        
+             },2000);
+
+
+         });
+
+        //  .then((res)=>{
+        //     console.log(res);
+        //  }).catch((err)=>{
+        //     console.log(err);
+        //  })
+        }
+             p_holder("vr")
+        .then((res)=>{
+                 return p_holder("ram")
+         }).then((res)=>{
+
+            return p_holder("siya");
+         })
+
+        // p_holder("good morning..");
+    </script>
+</html>
