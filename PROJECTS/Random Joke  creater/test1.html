@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(129, 217, 129);
+        }
+
+        #parent-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 40vw;
+            border: 4px;
+            background-color: rgb(25, 24, 24);
+            margin: auto;
+            padding: 20px;
+            border-radius: 1%;
+        }
+
+        #img-div {
+            display: flex;
+            justify-content: center;
+            margin-top: -90px;
+        }
+
+        #img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #para-div {
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            padding: 10px;
+            /* font-weight: 400px; */
+            word-wrap: break-word;
+            line-height: 27px;
+        }
+
+        @media (max-width: 768px) {
+            #parent-div {
+                width: 90vw;
+                height: auto;
+            }
+
+            #para-div {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #parent-div {
+                width: 100vw;
+                padding: 15px;
+            }
+
+            #para-div {
+                font-size: 0.8rem;
+            }
+        }
+
+        button {
+            width: 40%;
+            height: 9%;
+            background-color: rgb(104, 213, 104);
+            border-radius: 7%;
+            font-size: large;
+            font-weight: 8%;
+            font-family: elephant;
+            margin-left: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent-div">
+        <div>
+            <div id="img-div">
+                <img id="img" src="lol.jfif">
+            </div>
+
+            <div id="para-div">
+                <p id="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam fugiat autem at vel
+                    optio
+                    perspiciatis dolorem. Libero unde laudantium.</p>
+            </div>
+            <button id="btn">Get Random Joke</button>
+        </div>
+    </div>
+</body>
+<script>
+    const jokeCon = document.getElementById("p");
+    const btn= document.getElementById("btn");
+    const url ="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"; 
+    // const a = "pratiksha";
+    let getjoke = () => {
+        fetch(url)
+            .then(data => data.json())
+            .then(item =>{
+                jokeCon.textContent= `${item.p}`;
+            });
+    }
+    btn.addEventListener("click",getjoke);
+    getjoke();
+
+</script>
+
+</html>
